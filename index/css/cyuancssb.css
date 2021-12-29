@@ -1,0 +1,911 @@
+@charset "utf-8";
+/* CSS Document */
+.caidang_border{
+	position: relative;
+	margin-left: 50%;
+	left: -765px;
+}
+.donman{            /*中间导航*/
+			color:#000000;
+			display:block;
+			z-index: 2;
+			width: 125px;
+			height: 70px;		
+			background-color: #ff8ba7;	
+			font-size: 1.5em;	
+			position: fixed;
+			margin-left: 50%;
+			left: -175px;
+			text-align: center;
+			line-height: 70px;
+		    outline: none;   /*取消选中时的边框*/
+			top: 0;
+		}
+
+
+		
+		.nav_caidan_a{       /*菜单内容整体*/
+			width: 1530px;
+			height: 450px;			
+			position: fixed;
+			top: -500px;
+			background-color:#DAF3FF;		
+		}
+		
+		.nav_caidan_frame_a{          /*阴影*/
+			width: 100%;
+			height: 100%;
+			position: absolute;			
+			background-color:#faeee7; 
+			box-shadow: 0px 8px 30px 2px rgba(200,200,200,0.9);
+		}
+		
+		
+		.transi_div_a{          /*下拉*/
+			width: 100%;
+			height: 0px;			
+			transition: height 0.7s;
+		}	
+		
+		
+		
+		.nav_caidan_yi_yi,
+		.nav_caidan_yi_er,
+		.nav_caidan_yi_san,
+		.nav_caidan_yi_si,
+		.nav_caidan_yi_wu{            /*导航文字设置*/
+			display:block;	
+			position: absolute;
+		    width: 0px;			
+			 height:0px;			
+			text-align: center;	
+			
+		}
+		
+		
+		
+		
+		.nav_caidan_yi_head_yi,         /*下拉菜单导航统一*/
+		.nav_caidan_yi_head_er,
+		.nav_caidan_yi_head_san,
+		.nav_caidan_yi_head_si,
+		.nav_caidan_yi_head_wu{
+			position:absolute;
+			line-height: 60px;
+		}
+		
+		
+		.nav_caidan_yi_head_yi{left: 460px;}	   /*下拉菜单导航*/ 
+		.nav_caidan_yi_head_er{left:580px;} 		/*导航二位置*/
+		.nav_caidan_yi_head_san{left: 700px;}		 /*导航五位置*/
+		.nav_caidan_yi_head_si{left: 820px;}		  /*导航四位置*/
+		.nav_caidan_yi_head_wu{ left: 940px;}	      /*导航五位置*/
+	
+		
+		
+		
+		
+		.nav_caidan_yi_head_yi, /*内菜单导航文字设置*/
+		.nav_caidan_yi_head_er,
+		.nav_caidan_yi_head_san,
+		.nav_caidan_yi_head_si,
+		.nav_caidan_yi_head_wu
+		{   
+			color:#000000;				
+			display:block;
+			z-index: 1;
+			width: 125px;
+			height: 60px;			
+			font-size: 1.5em;			
+		}
+	
+		.nav_caidan_yi_content_yi,   /* 内菜单内容设置 */
+		.nav_caidan_yi_content_er,
+		.nav_caidan_yi_content_san,
+		.nav_caidan_yi_content_si,
+		.nav_caidan_yi_content_wu
+		{   
+			display:none;			
+		   width: 1530px;
+			height: 400px;			
+			position:relative;
+			top: 60px;
+			background-color: #faeee7;
+			z-index: 1;
+		}
+
+
+		.nav_caidan_yi_content_yi{    /*特别显示*/
+			display:inline-block;
+		}
+		
+		.nav_caidan_yi_content_yi_yi,
+		.nav_caidan_yi_content_er_er,
+		.nav_caidan_yi_content_san_san,
+		.nav_caidan_yi_content_si_si,
+		.nav_caidan_yi_content_wu_wu
+		{                                       /*内容隐藏*/
+			
+			display: inline-block;			
+		    z-index: 1;
+			position: relative;
+			width:15.2%;
+			height: 398px;				
+			margin-left: -3px;	
+			border-top: 2px solid #ff8ba7;
+			background-color:#fca3cc; 
+		}
+		
+		.nav_caidan_yi_content_yi_poster{  /*广告整体*/
+			position: absolute;			
+			display: inline-block;
+		   z-index: 1;
+			width:300px;
+			height: 398px;			
+			border-top:2px solid #ff8ba7;
+			background-color: #faeee7;				
+		}
+		
+		.nav_caidan_yi_content_yi_poster.q{		/*广告左*/	
+				left:0;
+		}
+		
+		.nav_caidan_yi_content_yi_poster.w{		  /*广告右*/	
+				right: 0;		
+		}
+		
+
+
+/*                  ************************************全部开始*********************                     */
+	.nav_caidan_yi_content_all{	/*全部*/
+		display: inline-block;
+		background-color: red;
+		width: 940px;
+		height: 398px;
+		border-top: 2px solid #ff8ba7;
+      }
+
+	.nav_caidan_yi_content_img{
+		position: absolute;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.nav_caidan_yi_content_img img{
+		position: absolute;
+		width: 940px;
+		height: 398px;
+		z-index: 1;
+	}
+
+    .nav_caidan_yi_content_back{   /*虚化的背景*/
+		position: absolute;
+		width: 940px;
+		height: 398px;
+		transition: opacity 1s;
+ 		background-color: #ff8ba7;
+		opacity: 0;
+		z-index: 1;
+		}
+
+
+.nav_caidan_yi_content_a{           /*超链接*/
+	position: absolute;
+	text-decoration: none;
+	color: red;
+	display: block;
+	text-align: center;
+	z-index: 2;
+	border-radius: 10px;
+	margin: 168px 400px;
+	font-size: 1.5em;
+	background-color: #ff8ba7;
+}
+
+.nav_caidan_yi_content_a:hover+.nav_caidan_yi_content_back{   /*虚化*/
+	opacity: 0.9;
+}
+.nav_caidan_yi_content_a:hover{            /*按钮变色*/
+	color: #FFFFFF;
+	background-color:#ff467e;
+}
+
+
+.nav_caidan_yi_content_a .a_div{                /*按钮内容*/
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+}
+     /*                  ************************************全部结束*********************                     */
+
+
+
+
+
+		
+		.nav_caidan_yi_content_yi_poster span,.nav_caidan_yi_content_yi_poster a{  /*内容设置*/
+			position: relative;
+			top: 60px;
+			display:block;
+			
+		}
+	  .nav_caidan_yi_content_yi_poster span{   
+		margin: 20px 20px;
+		}
+
+		.nav_caidan_yi_content_yi_poster a{                     /*链接设置*/
+			color:#ff467e;
+			text-align: center;			
+			margin-top: 20px;
+			margin-left: 50%;
+			left: -80px;
+			padding-top: 20px;
+			font-size: 1.2em;
+			height: 60px;	
+		}
+		
+
+
+
+
+
+		
+	
+		.nav_caidan_yi_yi:hover .nav_caidan_yi_content_yi{           /*显示*/
+			display: inline-block;
+			
+		}
+		.nav_caidan_yi_er:hover .nav_caidan_yi_content_er{         
+			display: inline-block;
+			
+		}
+		.nav_caidan_yi_san:hover .nav_caidan_yi_content_san{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_yi_si:hover .nav_caidan_yi_content_si{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_yi_wu:hover .nav_caidan_yi_content_wu{          
+			display: inline-block;
+			
+		}
+		
+
+
+
+       .nav_caidan_yi_yi:hover .nav_caidan_yi_head_yi{	  /*内文字修饰*/
+	   color: #ff467e;}
+      .nav_caidan_yi_er:hover .nav_caidan_yi_head_er{	
+	   color: #ff467e;}
+		.nav_caidan_yi_san:hover .nav_caidan_yi_head_san{	
+	   color: #ff467e;}
+		.nav_caidan_yi_si:hover .nav_caidan_yi_head_si{	
+	   color: #ff467e;}
+		.nav_caidan_yi_wu:hover .nav_caidan_yi_head_wu{	
+		color: #ff467e;}
+
+    
+
+
+		.nav_caidan_yi_content_yi_yi:hover,  /*内容变色*/
+		.nav_caidan_yi_content_er_er:hover,
+		.nav_caidan_yi_content_san_san:hover,
+		.nav_caidan_yi_content_si_si:hover,
+		.nav_caidan_yi_content_wu_wu:hover{
+			background-color: #ff467e;/*#ff8ba7*/
+		}
+
+			
+		
+  .donman:focus~.nav_caidan_a>div:first-child   /*下拉*/
+		{
+			height: 570px;
+			
+		}
+	.donman:focus,.tuku:focus,.ziyuan:focus{            /*碰到导航，文字改变*/
+		color:#ff467e;
+		}	
+		
+	.donman:hover,.tuku:hover,.ziyuan:hover{
+		color: #ff467e;
+		}
+		
+
+
+
+
+                             /**************11111111111111111111111*****************/
+
+.tuku{
+			color:#000000;
+			display:block;
+			z-index: 2;
+			width: 125px;
+			height: 70px;			
+			background-color: #ff8ba7;
+			font-size: 1.5em;	
+			position:fixed;
+			margin-left: 50%;
+			left: -50px;
+			text-align: center;
+			line-height: 70px;
+		    outline: none;
+			top: 0;
+}	
+		
+		
+		
+		
+		
+		.nav_caidan_b{       /*菜单内容整体*/
+			width: 1530px;
+			height: 450px;			
+			position: fixed;
+			top: -500px;			
+			background-color:#a6fff2;
+		}
+		
+		.nav_caidan_frame_b{
+			width: 1530px;
+			height: 450px;	
+			position: absolute;			
+			background-color:#faeee7; 
+			box-shadow: 0px 30px 30px 0px rgba(200,200,200,0.9);
+		}
+		
+		
+		.transi_div_b{          /*下拉*/
+			width: 100%;
+			height: 0px;			
+			transition: height 0.7s;
+		}	
+		
+		
+		
+		.nav_caidan_er_yi,
+		.nav_caidan_er_er,
+		.nav_caidan_er_san,
+		.nav_caidan_er_si,
+		.nav_caidan_er_wu{            /*导航文字设置*/
+			display:block;	
+			position: absolute;
+		    width: 0px;			
+			 height:0px;			
+			text-align: center;	
+			
+		}
+		
+		
+		.nav_caidan_er_head_yi,         /*下拉菜单导航统一*/
+		.nav_caidan_er_head_er,
+		.nav_caidan_er_head_san,
+		.nav_caidan_er_head_si,
+		.nav_caidan_er_head_wu{
+			position:absolute;
+			line-height: 60px;
+			margin-left: 50%;
+		}
+		
+		
+		.nav_caidan_er_head_yi{left: 430px;}	   /*下拉菜单导航*/ 
+		.nav_caidan_er_head_er{left:560px;} 		/*导航二位置*/
+		.nav_caidan_er_head_san{left:740px;}		 /*导航五位置*/
+		.nav_caidan_er_head_si{left:850px;}		  /*导航四位置*/
+		.nav_caidan_er_head_wu{ left:980px;}	      /*导航五位置*/
+	
+		
+		
+		
+		
+		
+		.nav_caidan_er_head_yi, /*内菜单导航文字设置*/
+		.nav_caidan_er_head_er,
+		.nav_caidan_er_head_san,
+		.nav_caidan_er_head_si,
+		.nav_caidan_er_head_wu
+		{  
+			color:#000000;
+			display:block;
+			z-index: 1;
+			width: 125px;
+			height: 60px;			
+			font-size: 1.5em;			
+		}
+
+	   .nav_caidan_er_head_er{           /*特别宽度*/
+	 		width:190px;
+		}
+	
+		.nav_caidan_er_content_yi,   /* 内菜单内容设置 */
+		.nav_caidan_er_content_er,
+		.nav_caidan_er_content_san,
+		.nav_caidan_er_content_si,
+		.nav_caidan_er_content_wu
+		{   
+			display:none;			
+		    width: 1530px;
+			height: 398px;			
+			position:relative;
+			top: 60px;
+			z-index: 1;
+			background-color:#faeee7; 
+		}
+		 
+
+
+
+		.nav_caidan_er_content_yi{  /*特别显示*/
+			display:inline-block;
+		}
+		
+
+
+		.nav_caidan_er_content_yi_yi,
+		.nav_caidan_er_content_er_er,
+		.nav_caidan_er_content_san_san,
+		.nav_caidan_er_content_si_si,
+		.nav_caidan_er_content_wu_wu
+		{                                       /*内容隐藏*/
+			
+			display: inline-block;			
+		   z-index: 1;
+			position: relative;
+			width:15.2%;
+			height: 398px;				
+			margin-left: -3px;		
+			border-top: 2px solid #ff8ba7;
+			background-color:#fca3cc; 
+		}
+		
+		.nav_caidan_er_content_yi_poster{  /*广告整体*/
+			position: absolute;			
+			display: inline-block;
+		   z-index: 1;
+			width:300px;
+			height: 398px;			
+			border-top:2px solid #ff8ba7;
+			background-color: #faeee7;	
+		}
+		
+		.nav_caidan_er_content_yi_poster.q{		/*广告左*/			
+			left:0px;
+		}
+		
+		.nav_caidan_er_content_yi_poster.w{		  /*广告右*/	
+			right: 0;		
+		}
+		
+
+
+/*                  ************************************全部开始*********************                     */
+	.nav_caidan_er_content_all{	/*全部*/
+		display: inline-block;
+		background-color: red;
+		width: 940px;
+		height: 398px;
+		border-top: 2px solid #ff8ba7;
+      }
+
+	.nav_caidan_er_content_img {
+		position: absolute;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.nav_caidan_er_content_img img{
+		position: absolute;
+		width: 940px;
+		height: 398px;
+	}
+
+    .nav_caidan_er_content_back{   /*虚化的背景*/
+		position: absolute;
+		width: 940px;
+		height: 398px;
+		transition: opacity 1s;
+		background-color: #343434;
+		opacity: 0;
+		}
+
+
+.nav_caidan_er_content_a{           /*超链接*/
+	position: absolute;
+	text-decoration: none;
+	color: red;
+	display: block;
+	text-align: center;
+	z-index: 2;
+	border-radius: 10px;
+	margin: 168px 400px;
+	font-size: 1.5em;
+	background-color: #ff8ba7;
+}
+
+.nav_caidan_er_content_a:hover+.nav_caidan_er_content_back{   /*虚化*/
+	opacity: 0.9;
+}
+.nav_caidan_er_content_a:hover{            /*按钮变色*/
+	color: #FFFFFF;
+	background-color:#ff467e;
+}
+
+.nav_caidan_er_content_a .a_div{                /*按钮内容*/
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+}
+     /*                  ************************************全部结束*********************                     */
+
+
+
+
+
+		
+		.nav_caidan_er_content_yi_poster span,.nav_caidan_er_content_yi_poster a{  /*内容设置*/
+			position: relative;
+			top: 60px;
+			display: block;
+		}
+
+		.nav_caidan_er_content_yi_poster span{
+			margin: 20px 20px;
+		}
+		.nav_caidan_er_content_yi_poster a{                     /*链接设置*/
+				color:#ff467e;
+			text-align: center;			
+			margin-top: 20px;
+			margin-left: 50%;
+			left: -80px;
+			padding-top: 20px;
+			font-size: 1.2em;
+			height: 60px;	
+		}
+		
+		
+		
+	
+		.nav_caidan_er_yi:hover .nav_caidan_er_content_yi{           /*显示*/
+			display: inline-block;
+			
+		}
+		.nav_caidan_er_er:hover .nav_caidan_er_content_er{         
+			display: inline-block;
+			
+		}
+		.nav_caidan_er_san:hover .nav_caidan_er_content_san{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_er_si:hover .nav_caidan_er_content_si{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_er_wu:hover .nav_caidan_er_content_wu{          
+			display: inline-block;
+			
+		}
+		
+
+  		.nav_caidan_er_yi:hover .nav_caidan_er_head_yi{	  /*修饰*/
+	   color: #ff467e;}
+      .nav_caidan_er_er:hover .nav_caidan_er_head_er{	
+	   color: #ff467e;}
+		.nav_caidan_er_san:hover .nav_caidan_er_head_san{	
+	   color: #ff467e;}
+		.nav_caidan_er_si:hover .nav_caidan_er_head_si{	
+	   color: #ff467e;}
+		.nav_caidan_er_wu:hover .nav_caidan_er_head_wu{	
+	   color: #ff467e;}
+
+
+
+		.nav_caidan_er_content_yi_yi:hover,  /*内容变色*/
+		.nav_caidan_er_content_er_er:hover,
+		.nav_caidan_er_content_san_san:hover,
+		.nav_caidan_er_content_si_si:hover,
+		.nav_caidan_er_content_wu_wu:hover{
+			background-color: #ff8ba7;
+		}
+		
+			
+		
+  .tuku:focus~.nav_caidan_b>div:first-child  /*下拉*/
+		{  
+			height: 570px;
+		}
+		
+		
+	
+
+
+                             /**************222222222222222222222222222*****************/
+
+.ziyuan{
+			color:#000000;
+			display:block;
+			z-index: 2;
+			width: 125px;
+			height: 70px;
+			background-color: #ff8ba7;	
+			font-size: 1.5em;	
+			position: fixed;
+			margin-left: 50%;
+			left: 75px;
+			text-align: center;
+			line-height: 70px;
+		  	outline: none;
+         	top: 0;
+}	
+		
+		
+		
+		
+		
+		.nav_caidan_c{       /*菜单内容整体*/
+			width: 1530px;
+			height: 450px;			
+			position: fixed;
+			top: -500px;
+			background-color:#DAF3FF;
+		}
+		
+		.nav_caidan_frame_c{          /*阴影*/
+			width: 100%;
+			height: 100%;
+			position: absolute;			
+			background-color:#faeee7; 
+			box-shadow: 0px 20px 40px 15px rgba(200,200,200,0.9);
+		}
+		
+		
+		.transi_div_c{          /*下拉*/
+			width: 100%;
+			height: 0px;			
+			transition: height 0.7s;
+		}	
+		
+		
+		
+		.nav_caidan_san_yi,
+		.nav_caidan_san_er,
+		.nav_caidan_san_san,
+		.nav_caidan_san_si,
+		.nav_caidan_san_wu{            /*导航文字设置*/
+			display:block;	
+			position: absolute;
+		    width: 0px;			
+			 height:0px;			
+			text-align: center;	
+			
+		}
+		
+		
+		
+		
+		.nav_caidan_san_head_yi,         /*下拉菜单导航统一*/
+		.nav_caidan_san_head_er,
+		.nav_caidan_san_head_san,
+		.nav_caidan_san_head_si,
+		.nav_caidan_san_head_wu{
+			position:absolute;
+			line-height: 60px;
+		}
+		
+		
+		.nav_caidan_san_head_yi{left: 460px;}	   /*下拉菜单导航*/ 
+		.nav_caidan_san_head_er{left:580px;} 		/*导航二位置*/
+		.nav_caidan_san_head_san{left: 700px;}		 /*导航五位置*/
+		.nav_caidan_san_head_si{left: 820px;}		  /*导航四位置*/
+		.nav_caidan_san_head_wu{ left: 940px;}	      /*导航五位置*/
+	
+		
+		
+		
+		
+		.nav_caidan_san_head_yi, /*内菜单导航文字设置*/
+		.nav_caidan_san_head_er,
+		.nav_caidan_san_head_san,
+		.nav_caidan_san_head_si,
+		.nav_caidan_san_head_wu
+		{   
+			color:#000000;				
+			display:block;
+			z-index: 1;
+			width: 125px;
+			height: 60px;			
+			font-size: 1.5em;			
+			
+		}
+	
+		.nav_caidan_san_content_yi,   /* 内菜单内容设置 */
+		.nav_caidan_san_content_er,
+		.nav_caidan_san_content_san,
+		.nav_caidan_san_content_si,
+		.nav_caidan_san_content_wu
+		{   
+			display:none;			
+		   width: 1530px;
+			height: 400px;			
+			position:relative;
+			top: 60px;
+			z-index: 1;
+			background-color: #faeee7;
+		}
+
+
+		.nav_caidan_san_content_yi{    /*特别显示*/
+			display:inline-block;
+		}
+		
+		.nav_caidan_san_content_yi_yi,
+		.nav_caidan_san_content_er_er,
+		.nav_caidan_san_content_san_san,
+		.nav_caidan_san_content_si_si,
+		.nav_caidan_san_content_wu_wu
+		{                                       /*内容隐藏*/
+			
+			display: inline-block;			
+		    z-index: 1;
+			position: relative;
+			width:15.2%;
+			height: 398px;				
+			margin-left: -3px;	
+			border-top: 2px solid #ff8ba7;
+			background-color:#fca3cc; 
+		}
+		
+		.nav_caidan_san_content_yi_poster{  /*广告整体*/
+			position: absolute;			
+			display: inline-block;
+		   z-index: 1;
+			width:300px;
+			height: 398px;			
+			border-top:2px solid #ff8ba7;
+			background-color: #faeee7;				
+		}
+		
+		.nav_caidan_san_content_yi_poster.q{		/*广告左*/	
+				left:0;
+		}
+		
+		.nav_caidan_san_content_yi_poster.w{		  /*广告右*/	
+				right: 0;		
+		}
+		
+
+
+ /*                  ************************************全部开始*********************                     */
+	.nav_caidan_san_content_all{	/*全部*/
+		display: inline-block;
+		background-color: red;
+		width: 940px;
+		height: 398px;
+		border-top: 2px solid #ff8ba7;
+      }
+
+	.nav_caidan_san_content_img {
+		position: absolute;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.nav_caidan_san_content_img img{
+		position: absolute;
+		width: 940px;
+		height: 398px;
+	}
+
+    .nav_caidan_san_content_back{   /*虚化的背景*/
+		position: absolute;
+		width: 940px;
+		height: 398px;
+		transition: opacity 1s;
+		background-color: #FFFFFF;
+		opacity: 0;
+		}
+
+.nav_caidan_san_content_a{           /*超链接*/
+	position: absolute;
+	text-decoration: none;
+	color: red;
+	display: block;
+	text-align: center;
+	z-index: 2;
+	border-radius: 10px;
+	margin: 168px 400px;
+	font-size: 1.5em;
+	background-color: #ff8ba7;
+}
+
+.nav_caidan_san_content_a:hover+.nav_caidan_san_content_back{   /*虚化*/
+	opacity: 0.9;
+}
+.nav_caidan_san_content_a:hover{            /*按钮变色*/
+	color: #FFFFFF;
+	background-color:#ff467e;
+}
+.nav_caidan_san_content_a .a_div{                /*按钮内容*/
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+}
+     /*                  ************************************全部结束*********************                     */
+
+
+		.nav_caidan_san_content_yi_poster span,.nav_caidan_san_content_yi_poster a{  /*内容设置*/
+			position: relative;
+			top: 60px;
+			display: block;
+		}
+
+		.nav_caidan_san_content_yi_poster span{
+			margin: 20px 20px;
+		}
+
+		.nav_caidan_san_content_yi_poster a{                     /*链接设置*/
+			color:#ff467e;
+			text-align: center;			
+			margin-top: 20px;
+			margin-left: 50%;
+			left: -80px;
+			padding-top: 20px;
+			font-size: 1.2em;
+			height: 60px;	
+		}
+		
+
+
+	
+		.nav_caidan_san_yi:hover .nav_caidan_san_content_yi{           /*显示*/
+			display: inline-block;
+			
+		}
+		.nav_caidan_san_er:hover .nav_caidan_san_content_er{         
+			display: inline-block;
+			
+		}
+		.nav_caidan_san_san:hover .nav_caidan_san_content_san{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_san_si:hover .nav_caidan_san_content_si{          
+			display: inline-block;
+			
+		}
+		.nav_caidan_san_wu:hover .nav_caidan_san_content_wu{          
+			display: inline-block;
+			
+		}
+
+
+
+  		.nav_caidan_san_yi:hover .nav_caidan_san_head_yi{	  /*文字修饰*/
+	   color: #ff467e;}
+      .nav_caidan_san_er:hover .nav_caidan_san_head_er{	
+	   color: #ff467e;}
+		.nav_caidan_san_san:hover .nav_caidan_san_head_san{	
+	   color: #ff467e;}
+		.nav_caidan_san_si:hover .nav_caidan_san_head_si{	
+	   color: #ff467e;}
+		.nav_caidan_san_wu:hover .nav_caidan_san_head_wu{	
+	   color: #ff467e;}
+		
+		.nav_caidan_san_content_yi_yi:hover,  /*内容变色*/
+		.nav_caidan_san_content_er_er:hover,
+		.nav_caidan_san_content_san_san:hover,
+		.nav_caidan_san_content_si_si:hover,
+		.nav_caidan_san_content_wu_wu:hover{
+			background-color: #ff8ba7;
+		}
+		
+			
+		
+  .ziyuan:focus~.nav_caidan_c>div:first-child  /*下拉*/
+		{
+			height: 570px;
+		}
+		
+		
+	

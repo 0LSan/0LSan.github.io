@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	.liuyan_bodyer{            /*留言整体*/
+		width: 1530px;
+		height: 450px;		
+		position:relative;
+		margin-top: 200px;
+		margin-left: 50%;
+		left: -765px;	
+	}
+
+.div_liuyan_left{        /*  左侧 导航*/
+	display: inline-block;
+	width: 100px;
+	height: 35px;	
+	line-height: 30px;
+	margin-top: 20px;	
+	color: #000000;
+	font-size: 1.4em;
+	position: relative;
+	margin-left: 50%;
+	left: -565px;	
+	top: 70px;	
+	outline: none;
+	
+	
+}
+
+
+.div_liuyan_right{    /*右侧*/
+	width: 900px;
+	min-height: 380px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-ms-border-radius: 15px;
+	overflow: hidden;	
+	position:absolute;	
+	margin-left: 50%;
+	left: -300px;
+	top: 10px;
+	background-color: gray;
+}
+
+.div_liuyan_right{           /*阴影 视觉特殊，只要一个*/
+	box-shadow: -10px 15px 20px 2px rgba(200,200,200,0.7);	
+}
+
+.div_liuyan_right_shejishi,     /*  右边隐藏*/
+.div_liuyan_right_kaifa,
+.div_liuyan_right_liuyan{
+	display: none;
+}
+                                      /*右侧上方内容*/
+.div_liuyan_right_a{
+	padding:50px 45px;
+	top: 0;
+	position: absolute;
+	 width: 810px;
+	height: 170px;
+	font-size: 2em;
+	font-family: "华文楷体";
+	background-color: #FFFFFF;
+}
+
+
+.div_liuyan_right_b{             /*右侧下方*/
+    width: 880px;
+	height: 110px;
+	position: absolute;
+	bottom: 0;
+	padding-left:30px;
+	background-color:#FFFFFF;
+}
+
+
+
+.div_liuyan_right_img{	/*头像*/
+	position: absolute;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 30px;
+	width: 70px;
+	height: 70px;
+	border-radius:35px;	
+	overflow: hidden;
+	background-color: black;
+}
+.div_liuyan_right_img img{ /*图片*/
+	width: 100%;
+	height: 100%;
+}
+
+.div_liuyan_right_name{    /*网名*/
+	display: inline-block;
+	margin-left: 130px;
+	margin-top: 10px;
+	width: 300px;
+	height:100%;
+}
+
+#div_liuyan_left_zhanzhang:focus~.div_liuyan_right>#div_liuyan_right_zhanzhang{
+	display: inline-block;
+}
+
+#div_liuyan_left_shejishi:focus~.div_liuyan_right>#div_liuyan_right_shejishi{
+	display: inline-block;
+	
+}
+
+#div_liuyan_left_kaifa:focus~.div_liuyan_right>#div_liuyan_right_kaifa{
+	display: inline-block;
+}
+
+#div_liuyan_left_liuyan:focus~.div_liuyan_right>#div_liuyan_right_liuyan{
+	display: inline-block;
+}
+

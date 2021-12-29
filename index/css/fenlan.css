@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+	
+		.bodyer_colu{          /*三栏设置*/
+			width: 1520px;
+			height: 700px;		
+			background-color: white;			
+		}
+		.bodyer_colu h1{          /*三栏标题设置*/
+			text-align: center;
+		}
+		.bodyer_colu_content{      /*三栏内容整体设置*/
+		  margin-left: 100px;
+			margin-top: 40px;
+		}
+		
+		.bodyer_colu_content_a,
+		.bodyer_colu_content_b,
+		.bodyer_colu_content_c{    /*三栏中的单栏设置*/
+			display: inline-block;
+			position: relative;
+			border-radius: 15px;
+			color: #262626;
+			overflow: hidden;
+			margin-left: 30px;
+			width: 400px;
+			height: 550px;						
+			background-color: #FFFFFF;
+			box-shadow: -5px 20px 20px 5px rgb(215,215,215,0.7);
+		}
+		
+		
+		
+		
+		.bodyer_colu_content img{       /*图片*/
+			height: 300px;
+			width: 400px;
+		}
+		
+		.bodyer_colu_content_p{
+		  	 padding: 20px 45px;
+			word-wrap: break-word;
+			width:360px;			
+			font-size: 1.5em;
+		}
+		
+		                                         /*************************第一组按钮************************************/
+		.bodyer_colu_content_buttom_a_a{                                   /*第一个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 7px;
+			background-color: red;
+			position:absolute;
+			margin-left: 50%;
+			left: -140px;
+		}
+		
+		.bodyer_colu_content_buttom_a_a a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_a_yi{        /*第一面颜色*/
+			 background-color: #c3f0ca;
+		}
+		.bodyer_colu_content_buttom_a_er{   /*第二面颜色*/
+			 background-color: #bce6eb;
+			 color:#00a7dc;
+			 text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_a_a:hover a:nth-child(1){    /*碰到时*/
+		margin-top: -50px;
+		
+		}
+		                                                                
+		.bodyer_colu_content_buttom_a_b{                                   /*第二个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 7px;
+			background-color: red;
+			position: absolute;
+			margin-left: 50%;
+			left: 20px;
+			
+		}
+		
+		.bodyer_colu_content_buttom_a_b a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_a_san{        /*第一面颜色*/
+			 background-color: #c3f0ca;
+		}
+		.bodyer_colu_content_buttom_a_si{   /*第二面颜色*/
+			 background-color: #bce6eb;
+			color:#00a7dc;
+			text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_a_b:hover a:nth-child(1){    /*碰到时的效果*/
+		margin-top: -50px;                 
+		   
+		}                            /*********************************第一组结束*****************************/
+		
+		
+		
+		
+		                                         /*************************第二组按钮************************************/
+		.bodyer_colu_content_buttom_b_a{                                   /*第一个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 7px;
+			background-color: red;
+			position:absolute;
+			margin-left: 50%;
+			left: -140px;
+		}
+		
+		.bodyer_colu_content_buttom_b_a a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_b_yi{        /*第一面颜色*/
+			 background-color: #c3f0ca;
+		}
+		.bodyer_colu_content_buttom_b_er{   /*第二面颜色*/
+			 background-color: #f2dcc3;
+			 color:#ff8400;
+			 text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_b_a:hover a:nth-child(1){    /*碰到时*/
+		margin-top: -50px;
+		
+		}
+		                                                                
+		.bodyer_colu_content_buttom_b_b{                                   /*第二个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 7px;
+			background-color: red;
+			position:absolute;
+			margin-left: 50%;
+			left: 20px;
+		}
+		
+		.bodyer_colu_content_buttom_b_b a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_b_san{        /*第一面颜色*/
+			 background-color: #c3f0ca;
+		}
+		.bodyer_colu_content_buttom_b_si{   /*第二面颜色*/
+			 background-color: #f2dcc3;
+			 color:#ff8400;
+			 text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_b_b:hover a:nth-child(1){    /*碰到时*/
+		margin-top: -50px; 		
+		   
+		}                            /*********************************第二组结束*****************************/
+		
+		                                         /*************************第三组按钮************************************/
+		.bodyer_colu_content_buttom_c_a{                                   /*第一个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 7px;
+			background-color: red;
+			position:absolute;
+			margin-left: 50%;
+			left: -140px;
+			
+		}
+		
+		.bodyer_colu_content_buttom_c_a a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_c_yi{        /*第一面颜色*/
+			 background-color: #c3f0ca;
+		}
+		.bodyer_colu_content_buttom_c_er{   /*第二面颜色*/
+			 background-color: #ffcdff;
+			 color:#ff8ba7;
+			 text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_c_a:hover a:nth-child(1){    /*碰到时*/
+		margin-top: -50px;
+		
+		}
+		                                                                
+		.bodyer_colu_content_buttom_c_b{                                   /*第二个按钮*/
+			display: inline-block;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;			
+		    overflow: hidden;
+			border-radius: 6px;
+			background-color: red;
+			position:absolute;
+			margin-left: 50%;
+			left: 20px;
+		}
+		
+		.bodyer_colu_content_buttom_c_b a{   /*转换速度*/
+			display: block;
+	   	 	width: 120px;
+			transition: margin 0.2s ease-out;
+			 position: relative;			
+			height: 50px;		 
+		}
+		
+		
+		.bodyer_colu_content_buttom_c_san{        /*第一面颜色*/
+			 background-color:#c3f0ca;
+		}
+		.bodyer_colu_content_buttom_c_si{   /*第二面颜色*/
+			 background-color: #ffcdff;
+			 color:#ff00ff;
+			 text-decoration:underline;
+		}
+		
+		
+		.bodyer_colu_content_buttom_c_b:hover a:nth-child(1){    /*碰到时*/
+		margin-top: -50px;                 
+		   
+		}                            /*********************************第三组结束*****************************/
+		
+		.div_liuyan{
+			width:1540px;
+			height: 900px;
+		}
+		
+		
+
+
+.bodyer_colu_content_buttom_a_a,
+.bodyer_colu_content_buttom_a_b,
+.bodyer_colu_content_buttom_b_a,
+.bodyer_colu_content_buttom_b_b,
+.bodyer_colu_content_buttom_c_a,
+.bodyer_colu_content_buttom_c_b{
+	bottom: 100px;
+}
+		

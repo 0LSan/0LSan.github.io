@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ob_margin_top{
+	margin-top: 100px;
+}
+.ob_margin_left{
+	position: relative;
+			margin-left: 50%;
+			left: -462px;	
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+		.body{
+			overflow-x:hidden;
+		}
+		.footer{                                                        /*尾部*/
+			width: 100%;
+			height: 200px;
+			background-color: #ff8ba7;	
+			position: relative;				
+		}
+
+
+
+		.shengmin{         /*申明*/
+			color: #FFFFFF;
+			text-align: center;
+			position: relative;
+			top: 20px;
+			line-height: 1.5em;
+		}
+
+		
+		
+		.footer a{
+			color: #FFFFFF;
+		}
+
+		.footer ul{
+			position: relative;
+			margin-left: 50%;
+			left: -230px;
+			top: 40px;		  
+		}
+
+		.footer li{
+			display: inline-block;
+			width: 80px;
+			color: #FFFFFF;
+			height: 20px;
+			text-align: center;				
+		}	
+		
+		.beianhao{
+	     	text-align: center;
+			position: relative;			
+			height: 20px;
+			top: 60px;
+		}
+		.footer_kefu{            /*客服图片*/
+		float: right;	
+		border: 1px solid #00cbff;
+		border-radius: 5px;
+		}
+		
+		
